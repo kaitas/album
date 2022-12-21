@@ -1,0 +1,51 @@
+theme: jekyll-theme-cayman
+encoding: UTF-8
+title: Akihiko SHIRAI, Ph.D
+# show_downloads: true
+languages: ["en", "ja"]
+google_analytics: UA-168023643-1
+
+source: .
+layouts_dir: _layouts
+# data_dir: _data # なぜかこのディレクトリをいったん指定しないと _posts が動かなかった
+includes_dir: _includes
+show_excerpts: true # 投稿の中身を展開する
+# http://jekyllrb-ja.github.io/docs/pagination/
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# permalink: date # 不明
+# collections_dir: .
+collections:
+  posts:
+    output: true
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+# https://genjiapp.com/blog/2013/11/13/jekyll-config-for-markdown.html
+# 以下のオプションはGithub pagesでは有効ではないと考えます
+# markdown: redcarpet
+# redcarpet:
+#  extensions: ["autolink", "hard_wrap"]
+# https://gist.github.com/abhisheknaik96/26ce79ac7a307eb836dcf02a52f87cf2
+# plugins:
+#  - jekyll-gist
+#  - jekyll-twitter-plugin
+
+# https://github.com/jekyll/jekyll-seo-tag
+# 効いてないかもしれない
+#  - jekyll-seo-tag
+#  - jekyll-sitemap
+# https://github.com/set0gut1/good-looking-repository/
+# twitter:
+# username: o_ob
+
+## https://jekyllrb.com/docs/front-matter/
+# defaults:
+#  - scope:
+#      path: ""
+#    values:
+#      image:
+#        path: /img/card.png
+#        height: 630
+#        width: 1200
